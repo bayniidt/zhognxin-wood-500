@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { assetPath } from "@/lib/site";
 
-const IMG = "/sites/zhongxinwood";
+const IMG = assetPath("/sites/zhongxinwood");
 
 const PRODUCTS = [
   {

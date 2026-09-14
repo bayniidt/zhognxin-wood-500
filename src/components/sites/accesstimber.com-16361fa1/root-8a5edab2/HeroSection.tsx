@@ -1,4 +1,6 @@
-const IMG = "/sites/zhongxinwood";
+import { assetPath } from "@/lib/site";
+
+const IMG = assetPath("/sites/zhongxinwood");
 
 export function HeroSection() {
   return (

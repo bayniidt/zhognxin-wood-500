@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { FloatingActions } from "@/components/sites/accesstimber.com-16361fa1/shared/FloatingActions";
+import { assetPath } from "@/lib/site";
 
 const inter = localFont({
   src: "./fonts/Inter-VariableFont_slnt,wght.woff2",
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
   description:
     "ZHONG XIN WOOD is a professional Okoumé (Aucoumea klaineana Pierre) sawn timber manufacturer in GSEZ Nkok, Gabon. Kiln-dried, FAS grade, direct processing.",
   icons: {
-    icon: "/my-self/logo.jpg",
-    shortcut: "/my-self/logo.jpg",
-    apple: "/my-self/logo.jpg",
+    icon: assetPath("/my-self/logo.jpg"),
+    shortcut: assetPath("/my-self/logo.jpg"),
+    apple: assetPath("/my-self/logo.jpg"),
   },
 };
 

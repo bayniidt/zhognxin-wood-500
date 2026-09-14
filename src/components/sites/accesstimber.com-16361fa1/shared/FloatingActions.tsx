@@ -2,8 +2,9 @@
 
 import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
+import { assetPath } from "@/lib/site";
 
-const WHATSAPP_ICON = "/sites/accesstimber.com-16361fa1/shared/whatsapp.png";
+const WHATSAPP_ICON = assetPath("/sites/accesstimber.com-16361fa1/shared/whatsapp.png");
 
 export function FloatingActions() {
   const [showBackToTop, setShowBackToTop] = useState(false);

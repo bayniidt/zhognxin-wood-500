@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { BusinessLocation } from "./BusinessLocation";
+import { assetPath } from "@/lib/site";
 
-const BRAND_IMG = "/sites/zhongxinwood/logo.jpg";
+const BRAND_IMG = assetPath("/sites/zhongxinwood/logo.jpg");
 
 export function ThemeFooter() {
   return (

@@ -1,7 +1,8 @@
 import { BusinessLocation } from "../shared/BusinessLocation";
+import { assetPath } from "@/lib/site";
 
-const SHARED = "/sites/accesstimber.com-16361fa1/shared";
-const BRAND_IMG = "/sites/zhongxinwood/logo.jpg";
+const SHARED = assetPath("/sites/accesstimber.com-16361fa1/shared");
+const BRAND_IMG = assetPath("/sites/zhongxinwood/logo.jpg");
 
 export function HomeFooter() {
   return (

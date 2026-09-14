@@ -1,4 +1,6 @@
-const SHARED = "/sites/accesstimber.com-16361fa1/shared";
+import { assetPath } from "@/lib/site";
+
+const SHARED = assetPath("/sites/accesstimber.com-16361fa1/shared");
 
 export function CtaSection() {
   return (

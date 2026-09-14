@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: "/zhognxin-wood-500",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: "/zhognxin-wood-500",
+  },
   output: "standalone",
 };
 

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { CloseIcon, MenuIcon } from "./icons";
+import { assetPath } from "@/lib/site";
 
 const NAV_ITEMS = [
   { label: "Products", href: "/#products" },
@@ -20,7 +21,7 @@ export function Header() {
         <div className="site-brand">
           <Link href="/" className="site-logo" aria-label="ZHONG XIN WOOD — home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/my-self/logo.jpg" alt="ZHONG XIN WOOD" width={52} height={55} />
+            <img src={assetPath("/my-self/logo.jpg")} alt="ZHONG XIN WOOD" width={52} height={55} />
           </Link>
           <Link href="/" className="site-wordmark" aria-label="ZHONG XIN WOOD — home">
             ZHONG XIN <span>WOOD</span>

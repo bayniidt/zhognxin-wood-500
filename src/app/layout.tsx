@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { FloatingActions } from "@/components/sites/accesstimber.com-16361fa1/shared/FloatingActions";
+import { HomeFooter } from "@/components/sites/accesstimber.com-16361fa1/root-8a5edab2/HomeFooter";
 import { assetPath } from "@/lib/site";
 
 const inter = localFont({
@@ -42,6 +43,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${cardo.variable}`}>
       <body>
         {children}
+        <HomeFooter />
         <FloatingActions />
       </body>
     </html>

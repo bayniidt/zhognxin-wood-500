@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/sites/accesstimber.com-16361fa1/shared/Header";
-import { ThemeFooter } from "@/components/sites/accesstimber.com-16361fa1/shared/ThemeFooter";
 import { ExportContact } from "@/components/sites/accesstimber.com-16361fa1/export-logistics-22e3f89d/ExportContact";
 import { ExportDocuments } from "@/components/sites/accesstimber.com-16361fa1/export-logistics-22e3f89d/ExportDocuments";
 import { ExportHero } from "@/components/sites/accesstimber.com-16361fa1/export-logistics-22e3f89d/ExportHero";
@@ -24,7 +23,6 @@ export default function ExportLogisticsPage() {
         <ExportDocuments />
         <ExportContact />
       </main>
-      <ThemeFooter />
     </>
   );
 }

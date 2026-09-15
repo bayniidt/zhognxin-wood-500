@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/sites/accesstimber.com-16361fa1/shared/Header";
-import { ThemeFooter } from "@/components/sites/accesstimber.com-16361fa1/shared/ThemeFooter";
 import { ContactContent } from "@/components/sites/accesstimber.com-16361fa1/contact-cfd191cd/ContactContent";
 import { ContactHero } from "@/components/sites/accesstimber.com-16361fa1/contact-cfd191cd/ContactHero";
 
@@ -18,7 +17,6 @@ export default function ContactPage() {
         <ContactHero />
         <ContactContent />
       </main>
-      <ThemeFooter />
     </>
   );
 }

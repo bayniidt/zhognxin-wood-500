@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/sites/accesstimber.com-16361fa1/shared/Header";
-import { ThemeFooter } from "@/components/sites/accesstimber.com-16361fa1/shared/ThemeFooter";
 import { AboutContent, AboutCta } from "@/components/sites/accesstimber.com-16361fa1/about-us-4a42131b/AboutContent";
 import { AboutHero } from "@/components/sites/accesstimber.com-16361fa1/about-us-4a42131b/AboutHero";
 
@@ -19,7 +18,6 @@ export default function AboutPage() {
         <AboutContent />
         <AboutCta />
       </main>
-      <ThemeFooter />
     </>
   );
 }

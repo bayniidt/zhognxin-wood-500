@@ -8,7 +8,7 @@ export function BusinessLocation() {
         <div>
           <p className="business-location-label">Our Location</p>
           <h2 id="business-location-title">Find ZHONG XIN WOOD</h2>
-          <p>GSEZ Nkok, Gabon, Central Africa</p>
+          <p>Libreville GSEZ Nkok, Gabon, Central Africa</p>
         </div>
         <div className="business-location-map">
           <iframe

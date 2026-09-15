@@ -1,5 +1,5 @@
 const STATS = [
-  { number: "25–70mm", label: "Custom Thickness" },
+  { number: "Okoumé", label: "Species" },
   { number: "KD", label: "Kiln Dried" },
   { number: "FAS", label: "Grade Standard" },
 ];

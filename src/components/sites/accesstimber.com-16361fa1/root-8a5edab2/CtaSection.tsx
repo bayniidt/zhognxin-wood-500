@@ -40,6 +40,7 @@ export function CtaSection() {
           WhatsApp
         </a>
       </div>
+      <p className="at-cta-whatsapp-number">WhatsApp: +8618550484652</p>
     </section>
   );
 }

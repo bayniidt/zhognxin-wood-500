@@ -54,16 +54,16 @@ export function HomeFooter() {
           textAlign: "left",
         }}
       >
-        <FooterColumn title="Sawmill">
+        <FooterColumn title="Location">
           <FooterText>GSEZ Nkok</FooterText>
-          <FooterText>Gabon, Central Africa</FooterText>
+          <FooterText>Gabon, Libreville Africa</FooterText>
           <FooterText>Direct Processing at Origin</FooterText>
         </FooterColumn>
 
         <FooterColumn title="Product">
           <FooterText>Okoumé Sawn Timber</FooterText>
           <FooterText>Kiln-Dried (KD) · FAS Grade</FooterText>
-          <FooterText>Thickness 25 / 38 / 50 / 70 mm</FooterText>
+          <FooterText>Thickness customized</FooterText>
         </FooterColumn>
 
         <FooterColumn title="Contact">
@@ -94,9 +94,9 @@ export function HomeFooter() {
         </FooterColumn>
 
         <FooterColumn title="Species">
-          <FooterText>Okoumé</FooterText>
+          <FooterText>Okoumé okoume &amp; African hardwood species</FooterText>
           <FooterText>Aucoumea klaineana Pierre</FooterText>
-          <FooterText>Gabon Origin · FOB Supply</FooterText>
+          <FooterText>Gabon Origin · FOB/CNF/CIF supply</FooterText>
         </FooterColumn>
       </div>
 

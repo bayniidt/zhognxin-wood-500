@@ -31,7 +31,7 @@ export function AboutSection() {
           </div>
           <div className="at-about-img">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`${IMG}/timber/squared-lumber-yard.jpg`} alt="Squared tropical hardwood lumber ready for shipment" />
+            <img src={`${IMG}/timber/about-stacked-pallet.jpg`} alt="Wrapped stack of Okoumé sawn timber ready for shipment" />
           </div>
         </div>
       </div>

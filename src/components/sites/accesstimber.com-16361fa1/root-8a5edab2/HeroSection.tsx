@@ -8,8 +8,8 @@ export function HeroSection() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="at-hero-img"
-        src={`${IMG}/timber/massive-log-forest.jpg`}
-        alt="Premium tropical hardwood log — ZHONG XIN WOOD"
+        src={`${IMG}/timber/hero-stacks.jpg`}
+        alt="Stacked Okoumé sawn timber — ZHONG XIN WOOD"
       />
       <div className="at-hero-overlay">
         <p className="at-label">Professional Okoumé Sawn Timber Supplier in Gabon</p>

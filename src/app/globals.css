@@ -859,6 +859,11 @@ a:hover {
   background: #0f2419;
   color: #fff;
 }
+.at-cta-whatsapp-number {
+  margin: 12px 0 0 !important;
+  font-size: 0.95rem !important;
+  opacity: 0.85;
+}
 
 /* =======================================================================
    EXPORT & LOGISTICS (export-logistics-22e3f89d) — ".el-" styles

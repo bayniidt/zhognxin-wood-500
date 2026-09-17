@@ -573,6 +573,33 @@ a:hover {
   font-size: 0.9rem;
 }
 
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 44px 20px 28px !important;
+  }
+  .site-footer > img {
+    margin-bottom: 14px !important;
+  }
+  .site-footer-columns {
+    align-items: stretch !important;
+    flex-direction: column !important;
+    gap: 28px !important;
+    margin: 34px auto !important;
+    max-width: 280px;
+    text-align: left !important;
+  }
+  .site-footer-column {
+    width: 100%;
+  }
+  .site-footer-column p:first-child {
+    margin-bottom: 10px !important;
+  }
+  .site-footer-column p:not(:first-child) {
+    line-height: 1.55;
+    margin-bottom: 6px !important;
+  }
+}
+
 /* ==========================================================================
    HOMEPAGE (root-8a5edab2) — ".at-" styles
    ========================================================================== */
@@ -741,7 +768,7 @@ a:hover {
 
 .at-species-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 .at-species-card {
@@ -783,8 +810,25 @@ a:hover {
   }
 }
 @media (max-width: 500px) {
+  .at-section {
+    padding: 50px 20px;
+  }
+  .at-section-gray,
+  .at-section-green {
+    padding: 50px 0;
+  }
+  .at-stats {
+    padding: 28px 20px;
+  }
   .at-species-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .at-species-card-img {
+    height: 210px;
+  }
+  .at-species-card-body {
+    padding: 20px;
   }
 }
 
@@ -1191,6 +1235,137 @@ a:hover {
   margin: 0 auto;
   padding: 70px 40px;
 }
+.ct-form-card {
+  background: #f1f1f1;
+  border-radius: 14px;
+  padding: 38px;
+  margin-bottom: 50px;
+}
+.ct-form-label {
+  display: block;
+  color: #8aaa96;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ct-form-card h2 {
+  color: #111;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin: 0 0 28px;
+}
+.ct-form-card form {
+  display: grid;
+  gap: 10px;
+}
+.ct-form-card label {
+  color: #111;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+.ct-form-card input,
+.ct-form-card textarea {
+  width: 100%;
+  border: 1px solid #d5d5d5;
+  border-radius: 28px;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  padding: 16px 20px;
+  outline: none;
+  box-sizing: border-box;
+}
+.ct-form-card textarea {
+  border-radius: 18px;
+  min-height: 170px;
+  resize: vertical;
+}
+.ct-form-card input:focus,
+.ct-form-card textarea:focus {
+  border-color: #1a3c2e;
+  box-shadow: 0 0 0 3px rgba(26, 60, 46, 0.12);
+}
+.ct-form-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: fit-content;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 28px;
+  background: #050505;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  padding: 6px 8px 6px 20px;
+  transition: transform 180ms ease, background 180ms ease;
+}
+.ct-form-submit span {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  font-size: 1.35rem;
+}
+.ct-form-submit:hover {
+  background: #1a3c2e;
+  transform: translateY(-1px);
+}
+.ct-form-note {
+  color: #3a5a4a;
+  font-size: 0.85rem;
+  margin: 4px 0 0;
+}
+.language-switcher {
+  position: fixed;
+  z-index: 60;
+  right: 82px;
+  bottom: 24px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.language-toggle {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 16px rgba(15, 36, 25, 0.2);
+}
+.language-menu {
+  display: grid;
+  min-width: 144px;
+  overflow: hidden;
+  border: 1px solid #d6d6d6;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.16);
+}
+.language-menu button {
+  border: 0;
+  border-bottom: 1px solid #ececec;
+  background: #fff;
+  color: #1a3c2e;
+  cursor: pointer;
+  font: inherit;
+  padding: 12px 16px;
+  text-align: left;
+}
+.language-menu button:last-child { border-bottom: 0; }
+.language-menu button:hover,
+.language-menu button.active {
+  background: #f4f8f5;
+  color: #e09000;
+}
 .ct-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1393,7 +1568,14 @@ a:hover {
   .ct-section {
     padding: 40px 20px;
   }
+  .ct-form-card {
+    padding: 28px 20px;
+  }
   .ct-grid {
     grid-template-columns: 1fr;
+  }
+  .language-switcher {
+    right: 70px;
+    bottom: 16px;
   }
 }

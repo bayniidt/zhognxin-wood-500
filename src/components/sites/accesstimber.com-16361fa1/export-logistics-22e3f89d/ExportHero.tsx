@@ -5,7 +5,7 @@ export function ExportHero() {
         <span className="el-label">Shipping &amp; Logistics</span>
         <h1 className="el-title">Export &amp; Logistics</h1>
         <p className="el-hero-description">
-          We coordinate the journey from our sawmill in GSEZ Nkok, Gabon, to
+          We coordinate the journey from our sawmill in Libreville Port, Gabon, to
           your nominated destination — with clear specifications, careful
           loading, and export documents prepared for every shipment.
         </p>

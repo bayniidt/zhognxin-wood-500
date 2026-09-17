@@ -5,8 +5,8 @@ const DOCUMENTS = [
   "Certificate of Origin",
   "Phytosanitary Certificate",
   "Fumigation Certificate",
-  "FLEGT / Legal Origin Documents",
-  "Traceability Information",
+  "EUDR",
+  "EUTR",
 ];
 
 export function ExportDocuments() {

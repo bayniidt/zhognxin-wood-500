@@ -45,12 +45,13 @@ const DETAILS: ContactItem[] = [
 ];
 
 const QUOTE_POINTS = [
-  "Species: Okoumé (Aucoumea klaineana Pierre)",
-  "Product form: sawn timber (logs on request)",
-  "Grade: FAS, KD or other specification",
-  "Dimensions: thickness × width × length (mm)",
-  "Volume: in m³ or number of containers",
-  "Destination port (for CIF) or FOB",
+  "What species?",
+  "Grade",
+  "KD/AD",
+  "Dimension: thickness(mm) random width & fix width(mm) length(mm) require",
+  "Volume in m³ or number of containers",
+  "FOB or CIF/CNF",
+  "Destination port",
   "Preferred payment terms",
 ];
 
@@ -80,6 +81,7 @@ const REG = [
 export function ContactContent() {
   return (
     <div className="ct-section">
+      <ContactForm />
       <div className="ct-grid">
         <div className="ct-details">
           <h2>Contact Details</h2>
@@ -170,3 +172,4 @@ export function ContactContent() {
     </div>
   );
 }
+import { ContactForm } from "./ContactForm";

@@ -1,4 +1,4 @@
-const MAP_URL = "https://www.google.com/maps/place/Sawn+Timber+manufacturer+zhongxin+Wood+Gabon/@0.390571,9.604091,15z";
+const MAP_URL = "https://maps.app.goo.gl/mFiwZ9NGM6Q3QBwe9?g_st=awc";
 const MAP_EMBED_URL = "https://www.google.com/maps?q=0.390571,9.604091&z=15&output=embed";
 
 export function BusinessLocation() {

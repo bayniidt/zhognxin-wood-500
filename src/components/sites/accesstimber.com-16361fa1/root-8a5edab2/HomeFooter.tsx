@@ -9,6 +9,7 @@ export function HomeFooter() {
     <>
       <BusinessLocation />
       <footer
+        className="site-footer"
         style={{
           background: "#0f2419",
           color: "#a8c8b8",
@@ -45,6 +46,7 @@ export function HomeFooter() {
       </p>
 
       <div
+        className="site-footer-columns"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -119,7 +121,7 @@ function FooterColumn({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className="site-footer-column">
       <p
         style={{
           color: "#fff",

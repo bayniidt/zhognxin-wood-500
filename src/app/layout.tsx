@@ -4,6 +4,7 @@ import "./globals.css";
 import { FloatingActions } from "@/components/sites/accesstimber.com-16361fa1/shared/FloatingActions";
 import { HomeFooter } from "@/components/sites/accesstimber.com-16361fa1/root-8a5edab2/HomeFooter";
 import { assetPath } from "@/lib/site";
+import { LanguageSwitcher } from "@/components/sites/accesstimber.com-16361fa1/shared/LanguageSwitcher";
 
 const inter = localFont({
   src: "./fonts/Inter-VariableFont_slnt,wght.woff2",
@@ -45,6 +46,7 @@ export default function RootLayout({
         {children}
         <HomeFooter />
         <FloatingActions />
+        <LanguageSwitcher />
       </body>
     </html>
   );

@@ -10,11 +10,11 @@ export function AboutSection() {
           <div>
             <p className="at-label">Who We Are</p>
             <h2 className="at-heading">
-              Professional Okoumé Sawn Timber Manufacturer in Gabon
+              Professional Okoumé (okoume) Sawn Timber Manufacturer in Gabon
             </h2>
             <p className="at-body">
               ZHONG XIN WOOD is a professional Okoumé (Aucoumea klaineana
-              Pierre) sawn timber manufacturer and processor, based in GSEZ
+              Pierre) sawn timber (sawnmill lumber) manufacturer and processor, based in GSEZ
               Nkok, Gabon. We process Gabon-origin Okoumé directly at source,
               offering kiln-dried sawn timber with reliable quality,
               traceability and regular supply.

@@ -32,13 +32,13 @@ const PRODUCTS = [
     name: "Okoumé Wood",
     img: "timber/product-okoume-blocks.jpg",
     alt: "Stacked Okoumé timber blocks",
-    desc: "Light, even-textured hardwood — the global standard for plywood, mouldings and panelling.",
+    desc: "Lightweight, low density & dimensionally stable, resistant to deformation. Attractive colour with straight, even grain. The top choice for furniture & decoration.",
   },
   {
     name: "Gabon Sawmill Processing",
     img: "timber/product-okoume-container.jpg",
     alt: "Okoumé timber being loaded into a container",
-    desc: "Sawn, dried, sorted and container-loaded directly at our GSEZ Nkok facility in Gabon.",
+    desc: "Timber sawn, kiln-dried, graded and container-loaded on-site at our GSEZ Nkok mill, Gabon.",
   },
 ];
 
@@ -50,17 +50,19 @@ export function ProductsSection() {
           Our Products
         </p>
         <h2 className="at-heading" style={{ textAlign: "center" }}>
-          Premium Okoumé Sawn Timber
+          Premium Okoumé (okoume) Sawn Timber
         </h2>
         <p
           className="at-body"
           style={{ textAlign: "center", maxWidth: 650, margin: "0 auto 40px" }}
         >
-          Kiln-dried, FAS-grade Gabon Okoumé — available in standard and custom
-          thicknesses, processed at our GSEZ Nkok sawmill and shipped worldwide
-          on FOB terms.
+          Kiln-dried FAS Grade | GSEZ Nkok, Gabon
+          <br />
+          Standard &amp; custom sizes | Global shipment
+          <br />
+          Trade terms: EXW, FOB, CNF, CIF
         </p>
-        <div className="at-species-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
+        <div className="at-species-grid">
           {PRODUCTS.map((product) => (
             <div className="at-species-card" key={product.name}>
               {/* eslint-disable-next-line @next/next/no-img-element */}

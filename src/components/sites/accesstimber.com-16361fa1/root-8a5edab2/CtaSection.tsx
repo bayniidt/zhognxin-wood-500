@@ -5,7 +5,8 @@ const SHARED = assetPath("/sites/accesstimber.com-16361fa1/shared");
 export function CtaSection() {
   return (
     <section id="contact" className="at-cta-strip">
-      <h2>Ready to Order Okoumé Sawn Timber?</h2>
+      <h2>Ready to Order Okoumé Sawn Timber okoume plywood?</h2>
+      <p>ready to order FSC okoume plywood?</p>
       <p>Contact us today for pricing, availability, and our latest stock list.</p>
       <div
         style={{

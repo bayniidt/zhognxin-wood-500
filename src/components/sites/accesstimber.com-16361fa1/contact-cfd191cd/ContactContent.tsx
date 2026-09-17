@@ -74,7 +74,7 @@ const SERVE = [
 const REG = [
   { label: "Company Name", value: "ZHONG XIN WOOD" },
   { label: "Location", value: "GSEZ Nkok, Gabon" },
-  { label: "Product", value: "Okoumé Sawn Timber" },
+  { label: "Product", value: "Okoumé Sawn Timber okoume plywood" },
   { label: "Origin", value: "Gabon, Central Africa" },
 ];
 

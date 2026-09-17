@@ -4,7 +4,7 @@ const DOCUMENTS = [
   "Bill of Lading",
   "Certificate of Origin",
   "Phytosanitary Certificate",
-  "Fumigation Certificate",
+  "FSC",
   "EUDR",
   "EUTR",
 ];

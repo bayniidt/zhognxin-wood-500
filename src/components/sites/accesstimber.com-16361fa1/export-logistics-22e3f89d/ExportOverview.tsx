@@ -7,16 +7,19 @@ export function ExportOverview() {
             <span className="el-label">How We Ship</span>
             <h2 className="el-heading">A clear route from Gabon to your port</h2>
             <p className="el-copy">
-              Zhongxin Wood processes Okoumé sawn timber at Sawn Timber
-              manufacturer zhongxin Wood Gabon, located at GSEZ Nkok. We plan
-              each order around the required species, grade, dimensions,
-              volume, destination, and Incoterm.
+              Zhong xin Wood is a Gabon‑based timber manufacturer located in GSEZ
+              Nkok. We supply Okoumé sawn timber and Okoumé plywood directly
+              from our factory with competitive pricing and consistent quality.
             </p>
             <p className="el-copy">
-              FOB planning covers the shipment through the port of loading.
-              CIF planning can include ocean freight and cargo insurance to
-              your nominated destination. The final quotation is calculated
-              from your confirmed volume, packing requirements, and port.
+              We provide one‑stop service from factory loading at GSEZ Nkok to
+              vessel shipment. We handle full‑cycle operations: production,
+              quality inspection, packaging and export, to ensure safe delivery
+              to your destination port.
+            </p>
+            <p className="el-copy">
+              With over 10 years of experience, we deliver fast, reliable
+              service for every customer.
             </p>
           </div>
           <div className="el-route-card">

@@ -4,9 +4,9 @@ import { AboutContent, AboutCta } from "@/components/sites/accesstimber.com-1636
 import { AboutHero } from "@/components/sites/accesstimber.com-16361fa1/about-us-4a42131b/AboutHero";
 
 export const metadata: Metadata = {
-  title: "About Us | Okoumé Sawn Timber Manufacturer – ZHONG XIN WOOD",
+  title: "About Us | Okoumé Sawn Timber okoume plywood Manufacturer – ZHONG XIN WOOD",
   description:
-    "ZHONG XIN WOOD is a Gabon-based Okoumé (Aucoumea klaineana Pierre) sawn timber manufacturer in GSEZ Nkok. Kiln-dried, FAS grade, direct processing.",
+    "ZHONG XIN WOOD is a Gabon-based Okoumé (Aucoumea klaineana Pierre) sawn timber okoume plywood manufacturer in GSEZ Nkok. Kiln-dried, FAS grade, direct processing.",
 };
 
 export default function AboutPage() {

@@ -42,7 +42,7 @@ export function HomeFooter() {
           textTransform: "uppercase",
         }}
       >
-        Professional Okoumé Sawn Timber Supplier
+        Professional Okoumé Sawn Timber okoume plywood Supplier
       </p>
 
       <div
@@ -63,7 +63,8 @@ export function HomeFooter() {
         </FooterColumn>
 
         <FooterColumn title="Product">
-          <FooterText>Okoumé Sawn Timber</FooterText>
+          <FooterText>Okoumé Sawn Timber okoume plywood</FooterText>
+          <FooterText>okoume plywood</FooterText>
           <FooterText>Kiln-Dried (KD) · FAS Grade</FooterText>
           <FooterText>Thickness customized</FooterText>
         </FooterColumn>

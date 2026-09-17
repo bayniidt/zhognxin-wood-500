@@ -3,6 +3,7 @@
 import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 import { assetPath } from "@/lib/site";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const WHATSAPP_ICON = assetPath("/sites/accesstimber.com-16361fa1/shared/whatsapp.png");
 
@@ -26,6 +27,7 @@ export function FloatingActions() {
 
   return (
     <aside className="at-floating-actions" aria-label="Quick actions">
+      <LanguageSwitcher />
       <a
         className="at-floating-action at-floating-whatsapp"
         href="https://wa.me/8618550484652"

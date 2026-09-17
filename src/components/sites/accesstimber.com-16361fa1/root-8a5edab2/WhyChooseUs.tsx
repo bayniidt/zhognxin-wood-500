@@ -12,7 +12,7 @@ const ITEMS = [
   {
     icon: "🔥",
     title: "Kiln-Dried (KD)",
-    text: "Controlled kiln drying delivers stable, moisture-controlled and export-ready sawn timber.",
+    text: "Controlled kiln drying delivers stable, moisture-controlled and export-ready sawn timber okoume plywood.",
   },
   {
     icon: "📏",
@@ -21,7 +21,7 @@ const ITEMS = [
   },
   {
     icon: "✅",
-    title: "Consistent Quality",
+    title: "Consistent Quality &FSC plywood",
     text: "Strict quality control at every stage — from log selection and sawing to grading and sorting.",
   },
   {

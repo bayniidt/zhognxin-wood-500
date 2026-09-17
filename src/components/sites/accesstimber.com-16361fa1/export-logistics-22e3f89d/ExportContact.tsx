@@ -17,7 +17,7 @@ export function ExportContact() {
         <div className="el-contact-grid">
           <div className="el-map-wrap">
             <iframe
-              title="Sawn Timber manufacturer zhongxin Wood Gabon location"
+              title="Sawn Timber okoume plywood manufacturer zhongxin Wood Gabon location"
               src={MAP_EMBED_URL}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -28,9 +28,9 @@ export function ExportContact() {
           </div>
           <div className="el-contact-card">
             <h3>ZHONG XIN WOOD</h3>
-            <p className="el-contact-role">Sawn Timber manufacturer</p>
+            <p className="el-contact-role">Sawn Timber okoume plywood manufacturer</p>
             <p>GSEZ Nkok, Gabon, Central Africa</p>
-            <p>Okoumé sawn timber · KD · FAS Grade</p>
+            <p>Okoumé sawn timber okoume plywood · KD · FAS Grade</p>
             <a href="mailto:info@zhongxinwood.com" className="el-email">
               info@zhongxinwood.com
             </a>

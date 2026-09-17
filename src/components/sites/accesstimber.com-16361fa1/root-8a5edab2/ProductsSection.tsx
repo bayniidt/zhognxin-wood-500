@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { assetPath } from "@/lib/site";
+import { ProductImageGallery } from "./ProductImageGallery";
 
 const IMG = assetPath("/sites/zhongxinwood");
 
 const PRODUCTS = [
   {
-    name: "Okoumé Sawn Timber",
+    name: "Okoumé Sawn Timber okoume plywood",
     img: "timber/product-okoume-logs.jpg",
     alt: "Okoumé logs stacked at a timber facility",
     desc: "Kiln-dried (KD), FAS grade, Gabon origin. The core of our range for furniture, joinery and doors.",
@@ -14,18 +15,20 @@ const PRODUCTS = [
     name: "Kiln-Dried (KD) Okoumé",
     img: "timber/product-okoume-board.jpg",
     alt: "Okoumé sawn board surface",
-    desc: "Moisture-controlled, stable and export-ready sawn timber with dependable quality.",
+    desc: "Moisture-controlled, stable and export-ready sawn timber okoume plywood with dependable quality.",
   },
   {
     name: "FAS Grade Okoumé",
     img: "timber/product-okoume-stacks.jpg",
-    alt: "Wrapped stacks of Okoumé sawn timber",
+    alt: "Wrapped stacks of Okoumé sawn timber okoume plywood",
     desc: "Premium clear grade for high-end furniture, interior joinery and door manufacturing.",
   },
   {
     name: "Custom Thickness",
     img: "timber/product-okoume-sawn.jpg",
     alt: "Okoumé boards stacked on pallets",
+    img2: "timber/product-custom-thickness-2.jpg",
+    alt2: "Custom-sized plywood sheets",
     desc: "Standard 25 / 38 / 50 / 70 mm plus customized specifications to your exact requirements.",
   },
   {
@@ -50,7 +53,7 @@ export function ProductsSection() {
           Our Products
         </p>
         <h2 className="at-heading" style={{ textAlign: "center" }}>
-          Premium Okoumé (okoume) Sawn Timber
+          Premium Okoumé (okoume) Sawn Timber okoume plywood
         </h2>
         <p
           className="at-body"
@@ -65,11 +68,13 @@ export function ProductsSection() {
         <div className="at-species-grid">
           {PRODUCTS.map((product) => (
             <div className="at-species-card" key={product.name}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                className="at-species-card-img"
-                src={`${IMG}/${product.img}`}
-                alt={product.alt}
+              <ProductImageGallery
+                images={[
+                  { src: `${IMG}/${product.img}`, alt: product.alt },
+                  ...(product.img2 && product.alt2
+                    ? [{ src: `${IMG}/${product.img2}`, alt: product.alt2 }]
+                    : []),
+                ]}
               />
               <div className="at-species-card-body">
                 <p className="at-species-name">{product.name}</p>

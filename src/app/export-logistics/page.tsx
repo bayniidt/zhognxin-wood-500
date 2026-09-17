@@ -9,7 +9,7 @@ import { ExportProcess } from "@/components/sites/accesstimber.com-16361fa1/expo
 export const metadata: Metadata = {
   title: "Export & Logistics | ZHONG XIN WOOD – Gabon",
   description:
-    "Plan your Okoumé sawn timber shipment from ZHONG XIN WOOD at GSEZ Nkok, Gabon, with FOB or CIF options and export documentation.",
+    "Plan your Okoumé sawn timber okoume plywood shipment from ZHONG XIN WOOD at GSEZ Nkok, Gabon, with FOB or CIF options and export documentation.",
 };
 
 export default function ExportLogisticsPage() {

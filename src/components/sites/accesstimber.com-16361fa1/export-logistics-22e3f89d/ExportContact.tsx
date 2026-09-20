@@ -31,8 +31,8 @@ export function ExportContact() {
             <p className="el-contact-role">Sawn Timber okoume plywood manufacturer</p>
             <p>GSEZ Nkok, Gabon, Central Africa</p>
             <p>Okoumé sawn timber okoume plywood · KD · FAS Grade</p>
-            <a href="mailto:info@zhongxinwood.com" className="el-email">
-              info@zhongxinwood.com
+            <a href="mailto:ellena@zhongxinwoods.com" className="el-email">
+              ellena@zhongxinwoods.com
             </a>
             <a href="https://wa.me/8618550484652" target="_blank" rel="noreferrer" className="el-contact-button">
               Request a Shipping Quote

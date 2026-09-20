@@ -26,8 +26,8 @@ const DETAILS: ContactItem[] = [
   {
     icon: "✉️",
     label: "Email",
-    value: "info@zhongxinwood.com",
-    href: "mailto:info@zhongxinwood.com",
+    value: "ellena@zhongxinwoods.com",
+    href: "mailto:ellena@zhongxinwoods.com",
   },
   {
     icon: "💼",
@@ -119,7 +119,7 @@ export function ContactContent() {
               <li key={point}>{point}</li>
             ))}
           </ul>
-          <a href="mailto:info@zhongxinwood.com" className="ct-quote-btn">
+          <a href="mailto:ellena@zhongxinwoods.com" className="ct-quote-btn">
             Email Us Now
           </a>
         </div>

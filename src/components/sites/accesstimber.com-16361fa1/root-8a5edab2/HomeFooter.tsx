@@ -74,8 +74,8 @@ export function HomeFooter() {
           <FooterText>WhatsApp: +86 185 5048 4652</FooterText>
           <FooterText>WeChat: 18550484652</FooterText>
           <FooterText>
-            <a href="mailto:info@zhongxinwood.com" style={{ color: "#F5A623", textDecoration: "none" }}>
-              info@zhongxinwood.com
+            <a href="mailto:ellena@zhongxinwoods.com" style={{ color: "#F5A623", textDecoration: "none" }}>
+              ellena@zhongxinwoods.com
             </a>
           </FooterText>
           <FooterText>

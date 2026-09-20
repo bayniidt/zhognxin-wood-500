@@ -51,6 +51,6 @@ product photography before any public/commercial launch.
 - WeChat: 18550484652
 
 Still placeholders (not yet provided):
-- Email: `info@zhongxinwood.com`
+- Email: `ellena@zhongxinwoods.com`
 - LinkedIn: `https://www.linkedin.com/company/zhongxinwood/`
 - Website: `https://www.zhongxinwood.com`

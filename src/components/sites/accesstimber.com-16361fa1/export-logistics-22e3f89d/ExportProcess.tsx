@@ -1,26 +1,32 @@
+"use client";
+
+import { useTranslation } from "../shared/i18n";
+
 const PROCESS_STEPS = [
-  ["01", "Order Confirmation", "Confirm Okoumé grade, dimensions, volume, destination, and Incoterm."],
-  ["02", "Production Planning", "We schedule processing at our GSEZ Nkok facility to your agreed specification."],
-  ["03", "Quality Control", "Dimensions, moisture content, and surface quality are checked before packing."],
-  ["04", "Export Documents", "We prepare the commercial invoice, packing list, origin and phytosanitary documents."],
-  ["05", "Container Loading", "20ft or 40ft loading is planned to use space efficiently and protect the cargo."],
-  ["06", "Shipping Handover", "Once the vessel departs, we share the bill of lading and available tracking details."],
+  ["01", "stepOrderTitle", "stepOrderText"],
+  ["02", "stepPlanningTitle", "stepPlanningText"],
+  ["03", "stepQualityTitle", "stepQualityText"],
+  ["04", "stepDocumentsTitle", "stepDocumentsText"],
+  ["05", "stepLoadingTitle", "stepLoadingText"],
+  ["06", "stepHandoverTitle", "stepHandoverText"],
 ] as const;
 
 export function ExportProcess() {
+  const { t } = useTranslation();
+
   return (
     <section className="el-section el-section-green">
       <div className="el-section-inner">
         <div className="el-section-heading el-section-heading-centered">
-          <span className="el-label">From Mill to Port</span>
-          <h2 className="el-heading el-heading-white">Our export process</h2>
+          <span className="el-label">{t("fromMillToPort")}</span>
+          <h2 className="el-heading el-heading-white">{t("exportProcessTitle")}</h2>
         </div>
         <div className="el-process-grid">
-          {PROCESS_STEPS.map(([number, title, copy]) => (
+          {PROCESS_STEPS.map(([number, titleKey, copyKey]) => (
             <article className="el-process-card" key={number}>
               <span className="el-step-number">{number}</span>
-              <h3>{title}</h3>
-              <p>{copy}</p>
+              <h3>{t(titleKey)}</h3>
+              <p>{t(copyKey)}</p>
             </article>
           ))}
         </div>

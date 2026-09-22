@@ -2,29 +2,29 @@
 
 import { Languages } from "lucide-react";
 import { useState } from "react";
-
-const LANGUAGES = ["English", "Français", "中文", "Español"];
+import { LANGUAGE_OPTIONS, useTranslation } from "./i18n";
 
 export function LanguageSwitcher() {
   const [open, setOpen] = useState(false);
-  const [language, setLanguage] = useState("English");
+  const { language, setLanguage, t } = useTranslation();
+  const currentLanguage = LANGUAGE_OPTIONS.find((option) => option.code === language);
 
   return (
     <div className="language-switcher">
       {open && (
-        <div className="language-menu" role="menu" aria-label="Choose language">
-          {LANGUAGES.map((option) => (
+        <div className="language-menu" role="menu" aria-label={t("ariaChooseLanguage")}>
+          {LANGUAGE_OPTIONS.map((option) => (
             <button
               type="button"
               role="menuitem"
-              className={option === language ? "active" : ""}
-              key={option}
+              className={option.code === language ? "active" : ""}
+              key={option.code}
               onClick={() => {
-                setLanguage(option);
+                setLanguage(option.code);
                 setOpen(false);
               }}
             >
-              {option}
+              {option.label}
             </button>
           ))}
         </div>
@@ -32,7 +32,7 @@ export function LanguageSwitcher() {
       <button
         type="button"
         className="language-toggle"
-        aria-label={`Language: ${language}`}
+        aria-label={t("languageLabel", { language: currentLanguage?.label ?? "English" })}
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
       >

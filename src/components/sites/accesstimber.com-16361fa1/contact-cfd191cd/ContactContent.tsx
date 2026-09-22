@@ -1,170 +1,133 @@
-type ContactItem = {
-  icon: string;
-  label: string;
-  value: string;
-  href?: string;
-  external?: boolean;
-};
+"use client";
 
-const DETAILS: ContactItem[] = [
-  {
-    icon: "👤",
-    label: "Contact",
-    value: "ELLENA — Marketing Director",
-  },
-  {
-    icon: "💬",
-    label: "WhatsApp",
-    value: "+86 185 5048 4652",
-    href: "https://wa.me/8618550484652",
-  },
-  {
-    icon: "💚",
-    label: "WeChat",
-    value: "18550484652",
-  },
-  {
-    icon: "✉️",
-    label: "Email",
-    value: "ellena@zhongxinwoods.com",
-    href: "mailto:ellena@zhongxinwoods.com",
-  },
-  {
-    icon: "💼",
-    label: "LinkedIn",
-    value: "ZHONG XIN WOOD",
-    href: "https://www.linkedin.com/company/zhongxinwood/",
-    external: true,
-  },
-  {
-    icon: "🌐",
-    label: "Website",
-    value: "www.zhongxinwood.com",
-    href: "https://www.zhongxinwood.com",
-  },
-];
+import { useTranslation } from "../shared/i18n";
+import { ContactForm } from "./ContactForm";
+
+const DETAILS = [
+  { icon: "👤", labelKey: "contactPersonLabel", valueKey: "contactPersonValue" },
+  { icon: "💬", labelKey: "contactWhatsAppLabel", value: "+86 185 5048 4652", href: "https://wa.me/8618550484652" },
+  { icon: "💚", labelKey: "contactWeChatLabel", value: "18550484652" },
+  { icon: "✉️", labelKey: "contactEmailLabel", value: "ellena@zhongxinwoods.com", href: "mailto:ellena@zhongxinwoods.com" },
+  { icon: "💼", labelKey: "contactLinkedInLabel", value: "ZHONG XIN WOOD", href: "https://www.linkedin.com/company/zhongxinwood/", external: true },
+  { icon: "🌐", labelKey: "contactWebsiteLabel", value: "www.zhongxinwood.com", href: "https://www.zhongxinwood.com" },
+] as const;
 
 const QUOTE_POINTS = [
-  "What species?",
-  "Grade",
-  "KD/AD",
-  "Dimension: thickness(mm) random width & fix width(mm) length(mm) require",
-  "Volume in m³ or number of containers",
-  "FOB or CIF/CNF",
-  "Destination port",
-  "Preferred payment terms",
-];
+  "quoteSpecies",
+  "quoteGrade",
+  "quoteKdAd",
+  "quoteDimension",
+  "quoteVolume",
+  "quoteIncoterm",
+  "quoteDestination",
+  "quotePayment",
+] as const;
 
 const HOURS = [
-  { day: "Monday – Friday", hours: "08:00 – 18:00" },
-  { day: "Saturday", hours: "09:00 – 14:00 (WhatsApp only)" },
-  { day: "Sunday", hours: "Closed" },
-];
+  { dayKey: "mondayFriday", hours: "08:00 – 18:00" },
+  { dayKey: "saturday", hoursKey: "saturdayHours" },
+  { dayKey: "sunday", hoursKey: "closed" },
+] as const;
 
 const SERVE = [
-  "Hardwood importers and distributors",
-  "Sawmills and timber processing companies",
-  "Plywood and panel manufacturers",
-  "Furniture and joinery manufacturers",
-  "Construction contractors and project developers",
-  "Door and interior decoration producers",
-  "Marine and civil engineering firms",
-];
+  "serveImporters",
+  "serveSawmills",
+  "servePlywood",
+  "serveFurniture",
+  "serveConstruction",
+  "serveDoors",
+  "serveMarine",
+] as const;
 
 const REG = [
-  { label: "Company Name", value: "ZHONG XIN WOOD" },
-  { label: "Location", value: "GSEZ Nkok, Gabon" },
-  { label: "Product", value: "Okoumé Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood" },
-  { label: "Origin", value: "Gabon, Central Africa" },
-];
+  { labelKey: "companyNameLabel", value: "ZHONG XIN WOOD" },
+  { labelKey: "locationLabel", valueKey: "locationAddress" },
+  { labelKey: "productLabel", valueKey: "productLong" },
+  { labelKey: "originLabel", valueKey: "originValue" },
+] as const;
 
 export function ContactContent() {
+  const { t } = useTranslation();
+
   return (
     <div className="ct-section">
       <ContactForm />
       <div className="ct-grid">
         <div className="ct-details">
-          <h2>Contact Details</h2>
-          {DETAILS.map((item) => (
-            <div className="ct-item" key={item.label}>
-              <span className="ct-item-icon">{item.icon}</span>
-              <div>
-                <div className="ct-item-label">{item.label}</div>
-                <div className="ct-item-value">
-                  {item.href ? (
-                    <a
-                      href={item.href}
-                      target={item.external ? "_blank" : undefined}
-                      rel={item.external ? "noreferrer" : undefined}
-                    >
-                      {item.value}
-                    </a>
-                  ) : (
-                    item.value
-                  )}
+          <h2>{t("contactDetailsTitle")}</h2>
+          {DETAILS.map((item) => {
+            const value = "valueKey" in item ? t(item.valueKey) : item.value;
+            const href = "href" in item ? item.href : undefined;
+            const external = "external" in item ? item.external : false;
+            return (
+              <div className="ct-item" key={item.labelKey}>
+                <span className="ct-item-icon">{item.icon}</span>
+                <div>
+                  <div className="ct-item-label">{t(item.labelKey)}</div>
+                  <div className="ct-item-value">
+                    {href ? (
+                      <a
+                        href={href}
+                        target={external ? "_blank" : undefined}
+                        rel={external ? "noreferrer" : undefined}
+                      >
+                        {value}
+                      </a>
+                    ) : value}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="ct-quote">
-          <h2>Request a Quote</h2>
-          <p>
-            To help us prepare an accurate quotation, please include the
-            following in your enquiry:
-          </p>
+          <h2>{t("quoteTitle")}</h2>
+          <p>{t("quoteDescription")}</p>
           <ul>
-            {QUOTE_POINTS.map((point) => (
-              <li key={point}>{point}</li>
-            ))}
+            {QUOTE_POINTS.map((pointKey) => <li key={pointKey}>{t(pointKey)}</li>)}
           </ul>
-          <a href="mailto:ellena@zhongxinwoods.com" className="ct-quote-btn">
-            Email Us Now
-          </a>
+          <a href="mailto:ellena@zhongxinwoods.com" className="ct-quote-btn">{t("emailUsNow")}</a>
         </div>
       </div>
 
       <div className="ct-hours">
-        <h2>Office Hours</h2>
+        <h2>{t("officeHoursTitle")}</h2>
         <table className="ct-hours-table">
           <thead>
             <tr>
-              <th>Day</th>
-              <th>Hours (GMT / Gabon)</th>
+              <th>{t("day")}</th>
+              <th>{t("hoursGmt")}</th>
             </tr>
           </thead>
           <tbody>
             {HOURS.map((row) => (
-              <tr key={row.day}>
-                <td className="day">{row.day}</td>
-                <td>{row.hours}</td>
+              <tr key={row.dayKey}>
+                <td className="day">{t(row.dayKey)}</td>
+                <td>{"hoursKey" in row ? t(row.hoursKey) : row.hours}</td>
               </tr>
             ))}
           </tbody>
         </table>
         <p style={{ color: "#5a7a6a", fontSize: "0.9rem", margin: "16px 0 0" }}>
-          WhatsApp messages are monitored outside office hours for urgent
-          enquiries.
+          {t("officeHoursNote")}
         </p>
       </div>
 
       <div className="ct-serve">
-        <h2>Who Should Contact Us?</h2>
+        <h2>{t("whoContactTitle")}</h2>
         <ul className="ct-serve-list">
-          {SERVE.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
+          {SERVE.map((itemKey) => <li key={itemKey}>{t(itemKey)}</li>)}
         </ul>
       </div>
 
       <div className="ct-reg">
-        <h2>Company Information</h2>
+        <h2>{t("companyInfoTitle")}</h2>
         <div className="ct-reg-info">
           {REG.map((item) => (
-            <div className="ct-reg-item" key={item.label}>
-              <div className="ct-reg-label">{item.label}</div>
-              <div className="ct-reg-value">{item.value}</div>
+            <div className="ct-reg-item" key={item.labelKey}>
+              <div className="ct-reg-label">{t(item.labelKey)}</div>
+              <div className="ct-reg-value">{"valueKey" in item ? t(item.valueKey) : item.value}</div>
             </div>
           ))}
         </div>
@@ -172,4 +135,3 @@ export function ContactContent() {
     </div>
   );
 }
-import { ContactForm } from "./ContactForm";

@@ -4,11 +4,13 @@ import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 import { assetPath } from "@/lib/site";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useTranslation } from "./i18n";
 
 const WHATSAPP_ICON = assetPath("/sites/accesstimber.com-16361fa1/shared/whatsapp.png");
 
 export function FloatingActions() {
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,14 +28,14 @@ export function FloatingActions() {
   };
 
   return (
-    <aside className="at-floating-actions" aria-label="Quick actions">
+    <aside className="at-floating-actions" aria-label={t("ariaQuickActions")}>
       <LanguageSwitcher />
       <a
         className="at-floating-action at-floating-whatsapp"
         href="https://wa.me/8618550484652"
         target="_blank"
         rel="noreferrer"
-        aria-label="Contact us on WhatsApp"
+        aria-label={t("ariaContactWhatsApp")}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={WHATSAPP_ICON} alt="" aria-hidden="true" />
@@ -43,7 +45,7 @@ export function FloatingActions() {
           className="at-floating-action at-floating-top"
           type="button"
           onClick={scrollToTop}
-          aria-label="Back to top"
+          aria-label={t("ariaBackToTop")}
         >
           <ArrowUp aria-hidden="true" />
         </button>

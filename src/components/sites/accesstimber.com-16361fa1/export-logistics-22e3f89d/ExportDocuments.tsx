@@ -1,31 +1,33 @@
+"use client";
+
+import { useTranslation } from "../shared/i18n";
+
 const DOCUMENTS = [
-  "Commercial Invoice",
-  "Packing List",
-  "Bill of Lading",
-  "Certificate of Origin",
-  "Phytosanitary Certificate",
-  "FSC",
-  "EUDR",
-  "EUTR",
-];
+  "commercialInvoice",
+  "packingList",
+  "billOfLading",
+  "certificateOrigin",
+  "phytosanitary",
+  "fsc",
+  "eudr",
+  "eutr",
+] as const;
 
 export function ExportDocuments() {
+  const { t } = useTranslation();
+
   return (
     <section className="el-section el-section-gray">
       <div className="el-section-inner">
         <div className="el-two-column el-documents-layout">
           <div>
-            <span className="el-label">Export Documentation</span>
-            <h2 className="el-heading">The paperwork your shipment needs</h2>
-            <p className="el-copy">
-              We align the documentary package with the destination and the
-              agreed shipment terms. For EU-destined orders, ask us about the
-              traceability information needed for your due-diligence process.
-            </p>
+            <span className="el-label">{t("exportDocumentation")}</span>
+            <h2 className="el-heading">{t("documentsTitle")}</h2>
+            <p className="el-copy">{t("documentsText")}</p>
           </div>
           <ul className="el-document-list">
-            {DOCUMENTS.map((document) => (
-              <li key={document}>{document}</li>
+            {DOCUMENTS.map((documentKey) => (
+              <li key={documentKey}>{t(documentKey)}</li>
             ))}
           </ul>
         </div>

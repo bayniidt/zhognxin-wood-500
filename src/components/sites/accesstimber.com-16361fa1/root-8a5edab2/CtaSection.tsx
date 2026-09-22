@@ -1,13 +1,18 @@
+"use client";
+
 import { assetPath } from "@/lib/site";
+import { useTranslation } from "../shared/i18n";
 
 const SHARED = assetPath("/sites/accesstimber.com-16361fa1/shared");
 
 export function CtaSection() {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="at-cta-strip">
-      <h2>Ready to Order Okoumé Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood?</h2>
-      <p>ready to order FSC okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood?</p>
-      <p>Contact us today for pricing, availability, and our latest stock list.</p>
+      <h2>{t("ctaTitle")}</h2>
+      <p>{t("ctaSubtitle")}</p>
+      <p>{t("ctaText")}</p>
       <div
         style={{
           display: "flex",
@@ -35,13 +40,13 @@ export function CtaSection() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={`${SHARED}/whatsapp.png`}
-            alt="WhatsApp"
+            alt={t("whatsapp")}
             style={{ width: 22, height: 22, flexShrink: 0, display: "block" }}
           />
-          WhatsApp
+          {t("whatsapp")}
         </a>
       </div>
-      <p className="at-cta-whatsapp-number">WhatsApp: +8618550484652</p>
+      <p className="at-cta-whatsapp-number">{t("whatsappNumber")}</p>
     </section>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { useTranslation } from "../shared/i18n";
 
 type ProductImage = {
   src: string;
@@ -10,6 +11,7 @@ type ProductImage = {
 
 export function ProductImageGallery({ images }: { images: ProductImage[] }) {
   const [selectedImage, setSelectedImage] = useState<ProductImage | null>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (!selectedImage) return;
@@ -30,7 +32,7 @@ export function ProductImageGallery({ images }: { images: ProductImage[] }) {
             className="at-species-image-button"
             key={image.src}
             onClick={() => setSelectedImage(image)}
-            aria-label={`Enlarge ${image.alt}`}
+            aria-label={t("imageEnlarge", { alt: image.alt })}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="at-species-card-img" src={image.src} alt={image.alt} />
@@ -51,7 +53,7 @@ export function ProductImageGallery({ images }: { images: ProductImage[] }) {
             type="button"
             className="at-image-lightbox-close"
             onClick={() => setSelectedImage(null)}
-            aria-label="Close enlarged image"
+            aria-label={t("imageClose")}
           >
             ×
           </button>

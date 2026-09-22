@@ -1,10 +1,15 @@
+"use client";
+
 import { assetPath } from "@/lib/site";
 import { BusinessLocation } from "../shared/BusinessLocation";
+import { useTranslation } from "../shared/i18n";
 
 const SHARED = assetPath("/sites/accesstimber.com-16361fa1/shared");
 const BRAND_IMG = assetPath("/sites/zhongxinwood/logo.jpg");
 
 export function HomeFooter() {
+  const { t } = useTranslation();
+
   return (
     <>
       <BusinessLocation />
@@ -42,7 +47,7 @@ export function HomeFooter() {
           textTransform: "uppercase",
         }}
       >
-        Professional Okoumé Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood Supplier
+        {t("footerSupplier")}
       </p>
 
       <div
@@ -56,23 +61,23 @@ export function HomeFooter() {
           textAlign: "left",
         }}
       >
-        <FooterColumn title="Location">
+        <FooterColumn title={t("footerLocation")}>
           <FooterText>GSEZ Nkok</FooterText>
-          <FooterText>Gabon, Libreville Africa</FooterText>
-          <FooterText>Direct Processing at Origin</FooterText>
+          <FooterText>{t("footerGabon")}</FooterText>
+          <FooterText>{t("footerDirectProcessing")}</FooterText>
         </FooterColumn>
 
-        <FooterColumn title="Product">
-          <FooterText>Okoumé Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood</FooterText>
-          <FooterText>okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood</FooterText>
-          <FooterText>Kiln-Dried (KD) · FAS Grade</FooterText>
-          <FooterText>Thickness customized</FooterText>
+        <FooterColumn title={t("footerProduct")}>
+          <FooterText>{t("productLong")}</FooterText>
+          <FooterText>{t("productLong")}</FooterText>
+          <FooterText>{t("footerKilnGrade")}</FooterText>
+          <FooterText>{t("footerThickness")}</FooterText>
         </FooterColumn>
 
-        <FooterColumn title="Contact">
-          <FooterText>ELLENA — Marketing Director</FooterText>
-          <FooterText>WhatsApp: +86 185 5048 4652</FooterText>
-          <FooterText>WeChat: 18550484652</FooterText>
+        <FooterColumn title={t("footerContact")}>
+          <FooterText>{t("contactPersonValue")}</FooterText>
+          <FooterText>{t("whatsappNumber")}</FooterText>
+          <FooterText>{t("contactWeChatLabel")}: 18550484652</FooterText>
           <FooterText>
             <a href="mailto:ellena@zhongxinwoods.com" style={{ color: "#F5A623", textDecoration: "none" }}>
               ellena@zhongxinwoods.com
@@ -91,15 +96,15 @@ export function HomeFooter() {
                 alt="WhatsApp"
                 style={{ width: 22, height: 22, verticalAlign: "middle", marginRight: 6, borderRadius: "50%" }}
               />
-              WhatsApp
+              {t("whatsapp")}
             </a>
           </FooterText>
         </FooterColumn>
 
-        <FooterColumn title="Species">
-          <FooterText>Okoumé okoume okan. Dabema. Azobe. movingui (& other African hardwoods) &amp; African hardwood species</FooterText>
+        <FooterColumn title={t("footerSpecies")}>
+          <FooterText>{t("footerAfricanSpecies")}</FooterText>
           <FooterText>Aucoumea klaineana Pierre</FooterText>
-          <FooterText>Gabon Origin · FOB/CNF/CIF supply</FooterText>
+          <FooterText>{t("footerOriginSupply")}</FooterText>
         </FooterColumn>
       </div>
 
@@ -107,7 +112,7 @@ export function HomeFooter() {
         style={{ border: "none", borderTop: "1px solid rgba(168,200,184,0.2)", margin: "0 0 20px" }}
       />
       <p style={{ margin: 0, fontSize: "0.8rem", color: "#6a9a7a" }}>
-        © 2026 ZHONG XIN WOOD. All rights reserved.
+        {t("footerRights")}
       </p>
       </footer>
     </>

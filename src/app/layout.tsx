@@ -1,5 +1,6 @@
 import { HomeFooter } from "@/components/sites/accesstimber.com-16361fa1/root-8a5edab2/HomeFooter";
 import { FloatingActions } from "@/components/sites/accesstimber.com-16361fa1/shared/FloatingActions";
+import { LanguageProvider } from "@/components/sites/accesstimber.com-16361fa1/shared/i18n";
 import { assetPath } from "@/lib/site";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -42,9 +43,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${cardo.variable}`}>
       <body>
-        {children}
-        <HomeFooter />
-        <FloatingActions />
+        <LanguageProvider>
+          {children}
+          <HomeFooter />
+          <FloatingActions />
+        </LanguageProvider>
       </body>
     </html>
   );

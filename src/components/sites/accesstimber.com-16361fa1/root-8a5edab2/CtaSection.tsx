@@ -5,8 +5,8 @@ const SHARED = assetPath("/sites/accesstimber.com-16361fa1/shared");
 export function CtaSection() {
   return (
     <section id="contact" className="at-cta-strip">
-      <h2>Ready to Order Okoumé Sawn Timber okoume plywood?</h2>
-      <p>ready to order FSC okoume plywood?</p>
+      <h2>Ready to Order Okoumé Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood?</h2>
+      <p>ready to order FSC okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood?</p>
       <p>Contact us today for pricing, availability, and our latest stock list.</p>
       <div
         style={{

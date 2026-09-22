@@ -1,5 +1,5 @@
-import { BusinessLocation } from "../shared/BusinessLocation";
 import { assetPath } from "@/lib/site";
+import { BusinessLocation } from "../shared/BusinessLocation";
 
 const SHARED = assetPath("/sites/accesstimber.com-16361fa1/shared");
 const BRAND_IMG = assetPath("/sites/zhongxinwood/logo.jpg");
@@ -42,7 +42,7 @@ export function HomeFooter() {
           textTransform: "uppercase",
         }}
       >
-        Professional Okoumé Sawn Timber okoume plywood Supplier
+        Professional Okoumé Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood Supplier
       </p>
 
       <div
@@ -63,8 +63,8 @@ export function HomeFooter() {
         </FooterColumn>
 
         <FooterColumn title="Product">
-          <FooterText>Okoumé Sawn Timber okoume plywood</FooterText>
-          <FooterText>okoume plywood</FooterText>
+          <FooterText>Okoumé Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood</FooterText>
+          <FooterText>okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood</FooterText>
           <FooterText>Kiln-Dried (KD) · FAS Grade</FooterText>
           <FooterText>Thickness customized</FooterText>
         </FooterColumn>
@@ -97,7 +97,7 @@ export function HomeFooter() {
         </FooterColumn>
 
         <FooterColumn title="Species">
-          <FooterText>Okoumé okoume &amp; African hardwood species</FooterText>
+          <FooterText>Okoumé okoume okan. Dabema. Azobe. movingui (& other African hardwoods) &amp; African hardwood species</FooterText>
           <FooterText>Aucoumea klaineana Pierre</FooterText>
           <FooterText>Gabon Origin · FOB/CNF/CIF supply</FooterText>
         </FooterColumn>

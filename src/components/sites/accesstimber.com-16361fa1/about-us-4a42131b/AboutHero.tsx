@@ -21,7 +21,7 @@ export function AboutHero() {
         <h1 className="au-title">About ZHONG XIN WOOD</h1>
         <p className="au-desc">
           A Gabon-based manufacturer and processor of Okoumé (Aucoumea
-          klaineana Pierre) sawn timber okoume plywood, supplying kiln-dried, FAS-grade
+          klaineana Pierre) sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood, supplying kiln-dried, FAS-grade
           lumber from our sawmill in GSEZ Nkok to buyers worldwide.
         </p>
       </div>

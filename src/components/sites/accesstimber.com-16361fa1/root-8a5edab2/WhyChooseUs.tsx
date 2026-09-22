@@ -12,7 +12,7 @@ const ITEMS = [
   {
     icon: "🔥",
     title: "Kiln-Dried (KD)",
-    text: "Controlled kiln drying delivers stable, moisture-controlled and export-ready sawn timber okoume plywood.",
+    text: "Controlled kiln drying delivers stable, moisture-controlled and export-ready sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood.",
   },
   {
     icon: "📏",

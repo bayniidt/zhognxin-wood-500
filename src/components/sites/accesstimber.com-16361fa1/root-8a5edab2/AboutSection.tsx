@@ -10,13 +10,13 @@ export function AboutSection() {
           <div>
             <p className="at-label">Who We Are</p>
             <h2 className="at-heading">
-              Professional Okoumé (okoume) Sawn Timber okoume plywood Manufacturer in Gabon
+              Professional Okoumé (okoume okan. Dabema. Azobe. movingui (& other African hardwoods)) Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood Manufacturer in Gabon
             </h2>
             <p className="at-body">
               ZHONG XIN WOOD is a professional Okoumé (Aucoumea klaineana
-              Pierre) sawn timber okoume plywood (sawnmill lumber) manufacturer and processor, based in GSEZ
+              Pierre) sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood (sawnmill lumber) manufacturer and processor, based in GSEZ
               Nkok, Gabon. We process Gabon-origin Okoumé directly at source,
-              offering kiln-dried sawn timber okoume plywood with reliable quality,
+              offering kiln-dried sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood with reliable quality,
               traceability and regular supply.
             </p>
             <p className="at-body" style={{ marginTop: 16 }}>
@@ -31,7 +31,7 @@ export function AboutSection() {
           </div>
           <div className="at-about-img">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`${IMG}/timber/about-stacked-pallet.jpg`} alt="Wrapped stack of Okoumé sawn timber okoume plywood ready for shipment" />
+            <img src={`${IMG}/timber/about-stacked-pallet.jpg`} alt="Wrapped stack of Okoumé sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood ready for shipment" />
           </div>
         </div>
       </div>

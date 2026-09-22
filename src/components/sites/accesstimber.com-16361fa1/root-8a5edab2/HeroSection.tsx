@@ -2,7 +2,7 @@ import { assetPath } from "@/lib/site";
 
 const IMG = assetPath("/sites/zhongxinwood");
 const HERO_IMAGES = [
-  { src: "timber/hero-board-3.jpg", alt: "Okoumé sawn timber okoume plywood stacks" },
+  { src: "timber/hero-board-3.jpg", alt: "Okoumé sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood stacks" },
   { src: "timber/hero-board-2.jpg", alt: "Stacked Okoumé timber boards" },
   { src: "timber/hero-board-1.jpg", alt: "Okoumé timber boards" },
 ];
@@ -17,7 +17,7 @@ export function HeroSection() {
         ))}
       </div>
       <div className="at-hero-overlay">
-        <p className="at-label">Professional Okoumé Sawn Timber okoume plywood Supplier in Gabon</p>
+        <p className="at-label">Professional Okoumé Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood Supplier in Gabon</p>
         <h1 className="at-hero-title">
           <span>ZHONG</span>
           <span>XIN</span>

@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Export & Logistics | ZHONG XIN WOOD – Gabon",
   description:
-    "Plan your Okoumé sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood shipment from ZHONG XIN WOOD at GSEZ Nkok, Gabon, with FOB or CIF options and export documentation.",
+    "Plan your Okoumé okan. Dabema. Azobe. movingui (& other African hardwoods) sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood shipment from ZHONG XIN WOOD at GSEZ Nkok, Gabon, with FOB or CIF options and export documentation.",
 };
 
 export default function ExportLogisticsPage() {

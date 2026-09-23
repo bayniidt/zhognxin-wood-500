@@ -4,9 +4,9 @@ import { Header } from "@/components/sites/accesstimber.com-16361fa1/shared/Head
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Okoumé Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood Manufacturer – ZHONG XIN WOOD",
+  title: "About Us | Okoumé okan. Dabema. Azobe. movingui (& other African hardwoods) Sawn Timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood Manufacturer – ZHONG XIN WOOD",
   description:
-    "ZHONG XIN WOOD is a Gabon-based Okoumé (Aucoumea klaineana Pierre) sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood manufacturer in GSEZ Nkok. Kiln-dried, FAS grade, direct processing.",
+    "ZHONG XIN WOOD is a Gabon-based Okoumé okan. Dabema. Azobe. movingui (& other African hardwoods) (Aucoumea klaineana Pierre) sawn timber okoume okan. Dabema. Azobe. movingui (& other African hardwoods) plywood manufacturer in GSEZ Nkok. Kiln-dried, FAS grade, direct processing.",
 };
 
 export default function AboutPage() {

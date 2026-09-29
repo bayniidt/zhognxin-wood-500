@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslation } from "../shared/i18n";
+import { useTranslation, withoutSpeciesPhrase } from "../shared/i18n";
 
 const CARDS = [
   ["🎯", "missionTitle", "missionText"],
@@ -33,8 +33,11 @@ export function AboutContent() {
 
       <div className="au-highlight">
         <h2>{t("coreProductTitle")}</h2>
-        <p><strong>{t("coreProductName")}</strong> — {t("coreProductTextOne")}</p>
-        <p>{t("coreProductTextTwo")}</p>
+        <p>
+          <strong>{t("coreProductName")}
+          </strong> — {t("coreProductTextOne")}
+        </p>
+        <p>{withoutSpeciesPhrase(t("coreProductTextTwo"))}</p>
         <p>{t("coreProductTextThree")}</p>
       </div>
 
@@ -56,7 +59,7 @@ export function AboutCta() {
   return (
     <section className="au-cta">
       <h2>{t("aboutCtaTitle")}</h2>
-      <p>{t("aboutCtaText")}</p>
+      <p>{withoutSpeciesPhrase(t("aboutCtaText"))}</p>
       <Link href="/contact/" className="au-cta-btn">{t("getInTouch")}</Link>
       <Link
         href="/#products"

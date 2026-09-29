@@ -2,6 +2,8 @@
 
 import { appendSpeciesPhrase, useTranslation } from "../shared/i18n";
 
+const SPECIES_DETAIL = "okan. Dabema. Azobe. movingui (& other African hardwoods)";
+
 const STATS = [
   { number: "Okoumé", label: "statsSpecies" as const },
   { number: "KD", label: "statsKilnDried" as const },
@@ -16,7 +18,16 @@ export function StatsBar() {
       <div className="at-stats-grid">
         {STATS.map((stat) => (
           <div key={stat.label}>
-            <div className="at-stat-number">{appendSpeciesPhrase(stat.number)}</div>
+            <div className="at-stat-number">
+              {stat.number === "Okoumé" ? (
+                <>
+                  <span>Okoumé</span>{" "}
+                  <span className="at-stat-number-detail">{SPECIES_DETAIL}</span>
+                </>
+              ) : (
+                appendSpeciesPhrase(stat.number)
+              )}
+            </div>
             <div className="at-stat-label">{t(stat.label)}</div>
           </div>
         ))}

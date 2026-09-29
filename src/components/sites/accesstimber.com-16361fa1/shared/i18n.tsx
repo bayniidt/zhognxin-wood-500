@@ -109,7 +109,7 @@ const english = {
   coreProductTitle: "Our Core Product",
   coreProductName: "Okoumé Sawn Timber & Plywood",
   coreProductTextOne: "Scientific name: Aucoumea klaineana Pierre. Origin: Gabon, Central Africa. Kiln-Dried (KD), FAS and other grades available. Thickness: 25 / 38 / 50 / 70 mm and customized specifications.",
-  coreProductTextTwo: "Okoumé plywood: thickness and size customized. Stable quality, good price and export service.",
+  coreProductTextTwo: "thickness and size customized. Stable quality, good price and export service.",
   coreProductTextThree: "Applications include furniture, joinery, doors, interior decoration, plywood and other wood products. We trade on FOB and CIF Incoterms, with full export documentation included in every shipment.",
   qualityTitle: "Sawmill & Plywood Quality Control",
   qualityRole: "GSEZ Nkok · Gabon",
@@ -976,6 +976,10 @@ const SPECIES_PATTERN = /(okoumé|okumé|okoume|okume|奥库梅)(?!\s+okan\.\s+D
 
 export function appendSpeciesPhrase(value: string) {
   return value.replace(SPECIES_PATTERN, (match) => `${match} ${SPECIES_PHRASE}`);
+}
+
+export function withoutSpeciesPhrase(value: string) {
+  return value.replaceAll(` ${SPECIES_PHRASE}`, "");
 }
 
 type TranslationContextValue = {

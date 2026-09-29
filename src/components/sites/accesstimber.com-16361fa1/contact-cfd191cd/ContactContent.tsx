@@ -7,7 +7,7 @@ const DETAILS = [
   { icon: "👤", labelKey: "contactPersonLabel", valueKey: "contactPersonValue" },
   { icon: "💬", labelKey: "contactWhatsAppLabel", value: "+86 185 5048 4652", href: "https://wa.me/8618550484652" },
   { icon: "💚", labelKey: "contactWeChatLabel", value: "18550484652" },
-  { icon: "✉️", labelKey: "contactEmailLabel", value: "ellena@zhongxinwoods.com", href: "mailto:ellena@zhongxinwoods.com" },
+  { icon: "✉️", labelKey: "contactEmailLabel", value: "elena@zhongxinwoods.com", href: "mailto:elena@zhongxinwoods.com" },
   { icon: "💼", labelKey: "contactLinkedInLabel", value: "ZHONG XIN WOOD", href: "https://www.linkedin.com/company/zhongxinwood/", external: true },
   { icon: "🌐", labelKey: "contactWebsiteLabel", value: "www.zhongxinwood.com", href: "https://www.zhongxinwood.com" },
 ] as const;
@@ -87,7 +87,7 @@ export function ContactContent() {
           <ul>
             {QUOTE_POINTS.map((pointKey) => <li key={pointKey}>{t(pointKey)}</li>)}
           </ul>
-          <a href="mailto:ellena@zhongxinwoods.com" className="ct-quote-btn">{t("emailUsNow")}</a>
+          <a href="mailto:elena@zhongxinwoods.com" className="ct-quote-btn">{t("emailUsNow")}</a>
         </div>
       </div>
 

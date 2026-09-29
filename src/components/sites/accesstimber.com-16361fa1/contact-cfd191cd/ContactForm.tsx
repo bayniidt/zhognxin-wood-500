@@ -17,7 +17,7 @@ export function ContactForm() {
     const body = encodeURIComponent(`${t("emailBodyName", { name })}\n${t("emailBodyEmail", { email })}\n\n${message}`);
 
     setSubmitted(true);
-    window.location.href = `mailto:ellena@zhongxinwoods.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:elena@zhongxinwoods.com?subject=${subject}&body=${body}`;
   }
 
   return (

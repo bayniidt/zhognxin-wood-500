@@ -784,6 +784,14 @@ a:hover {
   color: #1a3c2e;
   line-height: 1;
 }
+.at-stat-number-detail {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-top: 6px;
+}
 .at-stat-label {
   font-size: 0.9rem;
   color: #1a3c2e;

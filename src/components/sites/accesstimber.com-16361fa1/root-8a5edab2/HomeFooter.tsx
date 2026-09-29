@@ -69,7 +69,6 @@ export function HomeFooter() {
 
         <FooterColumn title={t("footerProduct")}>
           <FooterText>{t("productLong")}</FooterText>
-          <FooterText>{t("productLong")}</FooterText>
           <FooterText>{t("footerKilnGrade")}</FooterText>
           <FooterText>{t("footerThickness")}</FooterText>
         </FooterColumn>
@@ -79,8 +78,8 @@ export function HomeFooter() {
           <FooterText>{t("whatsappNumber")}</FooterText>
           <FooterText>{t("contactWeChatLabel")}: 18550484652</FooterText>
           <FooterText>
-            <a href="mailto:ellena@zhongxinwoods.com" style={{ color: "#F5A623", textDecoration: "none" }}>
-              ellena@zhongxinwoods.com
+            <a href="mailto:elena@zhongxinwoods.com" style={{ color: "#F5A623", textDecoration: "none" }}>
+              elena@zhongxinwoods.com
             </a>
           </FooterText>
           <FooterText>

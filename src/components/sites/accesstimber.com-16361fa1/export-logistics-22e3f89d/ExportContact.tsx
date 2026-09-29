@@ -33,8 +33,8 @@ export function ExportContact() {
             <p className="el-contact-role">{t("manufacturerRole")}</p>
             <p>{t("manufacturerLocation")}</p>
             <p>{t("manufacturerProduct")}</p>
-            <a href="mailto:ellena@zhongxinwoods.com" className="el-email">
-              ellena@zhongxinwoods.com
+            <a href="mailto:elena@zhongxinwoods.com" className="el-email">
+              elena@zhongxinwoods.com
             </a>
             <a href="https://wa.me/8618550484652" target="_blank" rel="noreferrer" className="el-contact-button">
               {t("shippingQuote")}

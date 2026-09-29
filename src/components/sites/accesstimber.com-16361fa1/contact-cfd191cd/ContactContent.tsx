@@ -9,7 +9,7 @@ const DETAILS = [
   { icon: "💚", labelKey: "contactWeChatLabel", value: "18550484652" },
   { icon: "✉️", labelKey: "contactEmailLabel", value: "elena@zhongxinwoods.com", href: "mailto:elena@zhongxinwoods.com" },
   { icon: "💼", labelKey: "contactLinkedInLabel", value: "ZHONG XIN WOOD", href: "https://www.linkedin.com/company/zhongxinwood/", external: true },
-  { icon: "🌐", labelKey: "contactWebsiteLabel", value: "www.zhongxinwood.com", href: "https://www.zhongxinwood.com" },
+  { icon: "🌐", labelKey: "contactWebsiteLabel", value: "www.zhongxinwoods.com", href: "https://www.zhongxinwoods.com" },
 ] as const;
 
 const QUOTE_POINTS = [

@@ -1,5 +1,6 @@
 "use client";
 
+import { createElement } from "react";
 import { appendSpeciesPhrase, useTranslation } from "../shared/i18n";
 
 const SPECIES_DETAIL = "okan. Dabema. Azobe. movingui (& other African hardwoods)";
@@ -21,8 +22,11 @@ export function StatsBar() {
             <div className="at-stat-number">
               {stat.number === "Okoumé" ? (
                 <>
-                  <span>Okoumé</span>{" "}
-                  <span className="at-stat-number-detail">{SPECIES_DETAIL}</span>
+                  {createElement("span", null, "Okoumé")} {createElement(
+                    "span",
+                    { className: "at-stat-number-detail" },
+                    SPECIES_DETAIL,
+                  )}
                 </>
               ) : (
                 appendSpeciesPhrase(stat.number)
